@@ -1,0 +1,28 @@
+# .gitignore — Wi-Fi Probe Request Sniffer (TypeScript/Node.js)
+
+# Dependencias e build
+node_modules/
+dist/
+
+# Logs e saidas locais
+*.log
+out.json
+out.csv
+
+# Segredos (nunca versionar)
+*.env
+.env
+*.pem
+*.key
+config.ini
+config.json
+credentials.json
+credentials.yml
+
+# Capturas locais NAO sao versionadas, exceto o demo de referencia abaixo.
+*.pcap
+*.pcapng
+!demo_probes.pcap
+
+# Cache local do graft — regenerable (rode `graft build`).
+/graft/

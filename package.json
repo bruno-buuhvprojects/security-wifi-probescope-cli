@@ -1,0 +1,28 @@
+{
+  "name": "wifi-probescope",
+  "version": "2.0.0",
+  "description": "Analisador de exposicao de privacidade em probe requests 802.11 (CLI TypeScript/Node.js)",
+  "type": "module",
+  "bin": {
+    "wifi-probescope": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "start": "node dist/cli.js",
+    "demo:pcap": "node scripts/make-demo-pcap.mjs",
+    "setup:capture": "node scripts/setup-capture.mjs",
+    "postinstall": "node scripts/check-capture.mjs"
+  },
+  "dependencies": {
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0",
+    "@types/node": "^24.0.0"
+  },
+  "optionalDependencies": {
+    "cap": "^0.2.1"
+  }
+}
