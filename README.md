@@ -1,4 +1,4 @@
-# wifi-probescope
+# security-wifi-probescope-cli
 
 CLI em **TypeScript/Node.js** para **analisar a exposição de privacidade em
 probe requests 802.11**. Captura (ou lê de um `.pcap`/`.pcapng`) os quadros que
